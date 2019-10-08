@@ -33,9 +33,9 @@ Network Distance: 1 hop
 
 
 On port 80 there is a login page
-![Alt Tag]
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Skytower/sky1.png)
 Testing for SQL injection
-![Alt Tag]
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Skytower/sky2.png)
 
 Blind SQL : #1
 

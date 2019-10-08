@@ -1,5 +1,16 @@
 
-Discovery
+Matrix: 3
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[+] Content Discovery
+[+] Password HASH Cracking
+[+] Disassembly with Ghidra
+[+] Lateral Movement abusing SUDO rights with ssh-key using /bin/cp
+[+] Privilege Escalation abusing SUDO rights /home/trinity/oracle
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 Nmap Scanning
 
@@ -103,7 +114,7 @@ root@setrus:~/vulnhub/matrix3# strings secret.gz
 admin:76a2173be6393254e72ffa4d6df1030a
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Matrix%3A3/matrix31.png)
 
 
 
@@ -145,6 +156,7 @@ data: PE32 executable (GUI) Intel 80386 Mono/.Net assembly, for MS Windows
 This is Windows executable file
 We open it with Ghidra :  we found the username and password to login via ssh
 
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Matrix%3A3/matrix32.png)
 
 Credentials : 
 guest

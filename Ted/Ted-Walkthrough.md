@@ -41,11 +41,13 @@ Browsing to port 80 :  http://192.168.56.103
 There's a login page
 Trying admin : admin as username and password credentials we get a error stating:
 <p>Password hash is not correct, make sure to hash it before submit.</p>
+
 ![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Ted/ted02.png)
 
 
 We try to encode it with different types of hashed: MD5, SHA1, SHA256. This later one worked submitting a SHA256 hash of admin, instead of the password
 ![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Ted/ted03.png)
+
 admin : 8C6976E5B5410415BDE908BD4DEE15DFB167A9C873FC4BB8A81F6F2AB448A918
 
 Using this credentials we are able to login to the application.

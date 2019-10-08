@@ -73,7 +73,7 @@ There is an IRC channel
 Connecting to it with HexChat we find a bot listening on channel #php. This bot executes commands in php.
 system and other commands are restricted
 By enetering the following into the chat on channel #php we get a reverse shell
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/ike/ike.png)
 
 Reverse shell on port 1234
 

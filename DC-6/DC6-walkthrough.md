@@ -1,10 +1,15 @@
 DC-6
 
 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 [+] Wordpress User Enumeration
 [+] Wordpress Brute Force
 [+] Activity Monitor  Wordpress Exporit (CSRF - Reverse Shell)
 [+] Privilege Escalation/Lateral Movement by abusing SUDO rights
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 Scan Results
 

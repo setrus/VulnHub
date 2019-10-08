@@ -128,7 +128,7 @@ After loggin into phpmyadmin we found the following accounts and passowrd hashes
 
 dreg : 0d3eccfb887aabd50f243b3f155c0f85
 loneferret : 5badcaf789d3d1d09794d8f021f40f0e
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Kioptrix%3A3/kioptrix31.png)
 Connecting with ssh
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -179,7 +179,7 @@ Privilege escalation
 sudo /usr/local/bin/ht
 Change the permissions on user loneferret to the same as roots
 
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Kioptrix%3A3/kioptrix32.png)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 loneferret@Kioptrix3:~$ sudo /usr/local/bin/ht

@@ -35,7 +35,7 @@ Nmap done: 1 IP address (1 host up) scanned in 22.93 seconds
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Due to the fact that nmap said that it could't redirect to http://dc-2/ we addede the host into /etc/hosts
+Due to the fact that nmap said that it could't redirect to http://dc-2/ we added the host into /etc/hosts
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

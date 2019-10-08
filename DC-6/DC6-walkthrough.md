@@ -1,17 +1,12 @@
 DC-6
 
+
 [+] Wordpress User Enumeration
-
 [+] Wordpress Brute Force
-
 [+] Activity Monitor  Wordpress Exporit (CSRF - Reverse Shell)
-
 [+] Privilege Escalation/Lateral Movement by abusing SUDO rights
 
-
-Discovery Phase
-
-Nmap Scan Results
+Scan Results
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Nmap scan report for 192.168.56.103
@@ -273,7 +268,7 @@ password : hepdesk01
 
 We have access to wordpress as mark
 Looking at activity monitory and searching for a exploit.
-![Alt Tag] (https://raw.githubusercontent.com/setrus/VulnHub/master/DC-6/DC6-p2.png)
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/DC-6/DC6-p2.png)
 Activity Monitor
 
 Searching for expoit for Activity Monitor
@@ -382,7 +377,7 @@ root@setrus:/var/www/html# cat csrf_wordpress.html
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-![Alt Tag] (https://raw.githubusercontent.com/setrus/VulnHub/master/DC-6/DC6-p3.png)
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/DC-6/DC6-p3.png)
 
 
 

@@ -147,9 +147,13 @@ url : /SecreTSMSgatwayLoginr
 
 
 Browsing to http://192.168.56.101/SecreTSMSgatwayLogin we find a playsms application
+
 ![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Dina/dina1.png)
+
 From the credentials we found we were able to login using the username :  touhid and password : diana
+
 ![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Dina/dina2.png)
+
 Searching for exploits
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

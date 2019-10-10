@@ -297,7 +297,7 @@ User devops may run the following commands on Wakanda1:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-There is a facke pip online available at https://github.com/0x00-0x00/FakePip.git
+There is a fake pip online available at https://github.com/0x00-0x00/FakePip.git designed to be used in privilege escalation.
 After downloading the git, we modify the payload in setup.py
 
 

@@ -94,36 +94,7 @@ drwxr-xr-x  4 dg   dg   4096 Jun 14  2016 dg
 drwxr-xr-x  2 mg   mg   4096 Jun 12  2016 mg
 
 
-~~~~~~~~~~~~~~~~~~~Violator
-
-
-
-
-Scan Results
-
-
-Using Metasploit to gain reverse shell
-
-
-
-Bruteforcing passwords for FTP using the users found.
-Password file got from wiki page in index. https://en.wikipedia.org/wiki/Violator_(album)
-
-
-Getting user dg
-
-
-
-User dg has SUDO rights to run /home/dg/bd/sbin/proftpd
-Testing with netstat we see the ftp service is running on port 2121.
-
-We first portforward the port to localhost:
-
-
-The FTP server is ProFTPD 1.3.3c and this is vulnerable 
-
-Exploitation of ProFTPd 1.3.3c
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 Bruteforcing passwords for FTP using the users found.
@@ -240,3 +211,4 @@ id
 uid=0(root) gid=0(root) groups=0(root),65534(nogroup)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

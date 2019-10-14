@@ -286,7 +286,8 @@ patrick@TORMENT:/bin$
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-After adding the user qiu and Group qiu in /etc/apache2/apache2.conf we are downloading the php-reverse-shell.php
+Ading : user qiu and Group qiu in /etc/apache2/apache2.conf 
+In order to get a reverse shell present on the box after the restart, we upload a php-reverse-shell.php and put it into /var/www/html. 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 patrick@TORMENT:/bin$ nano /etc/apache2/apache2.conf 
@@ -307,7 +308,8 @@ patrick@TORMENT:/var/www/html$
 
 
 Using sudo rights for user patrick we are able to reboot the server.
-Getting reverse shell for user qiu
+
+Getting reverse shell for user qiu is done by accessing the following ling. Meanwhile there is a listener on Kali on port 1234.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -332,7 +334,7 @@ uid=1000(qiu) gid=1000(qiu) groups=1000(qiu),24(cdrom),25(floppy),29(audio),30(d
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Privilge escalation
+Privilege escalation
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 $ sudo -l 

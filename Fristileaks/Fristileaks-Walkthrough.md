@@ -52,7 +52,7 @@ Disallow: /beer
 
 
 Browsing to the website we find a reference to fristi
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Fristileaks/friski1.png)
 
 Browsing to http://192.168.56.106/fristi we get an admin pannel with a base 64 encoded string in the source page.
 
@@ -68,7 +68,7 @@ We need to clean this up for production. I left some junk in here to make testin
 - by eezeepz
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Fristileaks/friski2.png)
 
 
 
@@ -100,13 +100,13 @@ root@setrus:~/vulnhub/fristileaks# caecho 'iVBORw0KGgoAAAANSUhEUgAAAW0AAABLCAIAA
 
 
 The file image.png
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Fristileaks/friski3.png)
 
 Trying user eezeepz and the password keKkeKKeKKeKkEkkEk we were able to login.
 
 We found a feature to upload a file to the server. We upload a php-reverse-shell.php
 Due to the fact that there is filter on the server that prevents us from uploading php files, we are sending the file through burp
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Fristileaks/friski4.png)
 
 The filter is bypassed and the file is uploaded in the /uploads folder
 Starting a listener on port 1234
@@ -191,7 +191,7 @@ print cryptoResult
 We have the cryptpass.py and the cryptedpass.txt
 We get the password by modifying the script
 
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Fristileaks/friski5.png)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 root@setrus:~/vulnhub/fristileaks# python cryptpass.py =RFn0AKnlMHMPIzpyuTI0ITG

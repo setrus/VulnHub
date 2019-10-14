@@ -239,11 +239,11 @@ local: id_rsa remote: id_rsa
 
 Using HexChat we connect to the IRC channel by using the default password for ngirc.
 Password : wealllikedebian
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Tourment/tourment1.png)
 
 On the CUPS server, http://192.168.56.103:631 we have a list of printers and the username corresponding to the printing jobs
 
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Tourment/tourment2.png)
 
 By using the passphrase got from the IRC channel : 
 

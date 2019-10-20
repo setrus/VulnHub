@@ -60,7 +60,7 @@ root@setrus:~/vulnhub/pumpkinFestival# cat /etc/hosts
 
 
 It is based on Wordpress
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/PumpkinFestival/pumpkin1.png)
 
 Enumerating users for Wordpress
 
@@ -319,12 +319,12 @@ root@setrus:~/vulnhub/pumpkinFestival# curl http://pumpkins.local/readme.html
 The string K82v0SuvV1En350M0uxiXVRTmBrQIJQN78s  is a base62 encoding.
 Going to https://base62.io/ we were able to decode it.
 
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/PumpkinFestival/pumpkin2.png)
 
 So we got user, morse, jack, admin and harry.
 Trying to bruteforce the credentials for ftp, we get the password for harry :  yrrah
 
-Ug0t!TrlpyJ
+Ug0t!TrIpyJ
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 setrus@host:~$ ftp

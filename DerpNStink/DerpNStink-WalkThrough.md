@@ -62,7 +62,8 @@ root@setrus:~# cat /etc/hosts
 
 Dirb identified a /weblog that is hosted with wordpress
 
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/DerpNStink/derpnstink1.png)
+
 Tying credentials admin:admin we are able to login.
 
 After loggin in we identify a Slideshow plugin. 
@@ -137,9 +138,11 @@ define('DB_COLLATE', '');
 
 Logging in into php admin we get the following usernames and passwords:
 
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/DerpNStink/derpnstink2.png)
+
 Cracking the password hash we get the following credentials :
-![Alt Tag]()
+
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/DerpNStink/derpnstink3.png)
 
 We try to login with username : stinky and password: wedgie57
 
@@ -209,7 +212,8 @@ local: derpissues.pcap remote: derpissues.pcap
 
 
 Analysing the file with wireshark we found the password for user mrderp.
-![Alt Tag]()
+
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/DerpNStink/derpnstink4.png)
 
 Connecting as mrderp : derpderpderpderpderpderpderp
 

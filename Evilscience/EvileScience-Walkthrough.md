@@ -37,6 +37,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 
 Testing for Local File Inclusion 
+
 We found that we can access /var/log/auth.log
 
 ![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Evilscience/evil1.png)
@@ -59,6 +60,7 @@ Permission denied, please try again.
 
 
 Reverse shell - Remote Command Execution
+
 ![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Evilscience/evil2.png)
 
 

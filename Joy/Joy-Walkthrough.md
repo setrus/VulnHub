@@ -155,7 +155,7 @@ site cpto /home/ftp/upload/version_control
 
 Browsing to version_control on ftp we get the version of the ftp service running.
 
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Joy/joy.png)
 
 Versions  : ProFTPd :  1.3.5
 Webroot :  /var/www/tryingharderisjoy

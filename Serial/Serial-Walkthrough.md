@@ -1,4 +1,4 @@
-Serial
+Serial -  PHP Serialization in cookie
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [+] Content Discovery of source files php
@@ -70,8 +70,9 @@ Hello sk4This is a beta test for new cookie handler
 
 
 
-Looking at the cookies sent to the server:
+Looking at the cookies sent to the server
 
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Serial/serial1.png)
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -172,6 +173,7 @@ LOG: setrusTzo0OiJVc2VyIjoyOntzOjEwOiIAVXNlcgBuYW1lIjtzOjY6InNldHJ1cyI7czo5OiIAV
 
 Testing the serialization on the server:
 
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Serial/serial2.png)
 
 Modifying the log file to include something from kali .
 
@@ -210,6 +212,7 @@ root@setrus:~/vulnhub/serial# cat log.class.php
 
 We get the credentials to login to the server
 
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Serial/serial3.png)
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

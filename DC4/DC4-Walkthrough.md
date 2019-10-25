@@ -2,9 +2,9 @@ DC4
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [+] Brute Force web login password
-[+] Execute commands on the server from UI
+[+] Execute commands on the server from web app
 [+] Hydra brute force login credentials
-[+] Privilege Escalation abusing SUDO rights -  teehee ---ading setrus in /etc/passwd
+[+] Privilege Escalation abusing SUDO rights -  teehee ---adding setrus in /etc/passwd
 "setrus::0:0:::/bin/bash"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

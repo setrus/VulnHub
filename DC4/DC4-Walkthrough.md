@@ -36,17 +36,20 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Browsing to http://192.168.56.109 we found a login page
 
-
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/DC4/dc41.png)
 
 Burp Intruder with username : admin
 password :  rockyou.txt
 
-
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/DC4/dc42.png)
 
 We can execute command on the server from the web application
 
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/DC4/dc43.png)
 
 After browsing the server we found a password backup for user jim
+
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/DC4/dc44.png)
 
 
 All this passwords have been put in a file.
@@ -70,7 +73,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2019-10-25 09:49:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Username :  jim
+Username : jim
 Password : jibril04
 
 

@@ -1,7 +1,11 @@
 Born2Root
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[]
+[+] Content Discovery
+[+] Remote Login with Private Key
+[+] Privilege Escaltion with cronjob in /tmp
+[+] Password generation with CUPP 
+[+] Hydra Brute Forcing ssh credentials
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -81,7 +85,7 @@ GENERATED WORDS: 4612
 
 Browsing to /icons we found a RSA Private KEY
 
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Born2Root/born2root.png)
 We use this private key to login to the server as martin.
 
 

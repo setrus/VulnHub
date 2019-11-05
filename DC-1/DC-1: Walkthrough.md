@@ -47,7 +47,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 
 There is a Drupal 7 Installation present at port 80
-
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/DC-1/dc1.png)
 
 Exploiting Drupal (Metasploit)
 

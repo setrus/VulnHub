@@ -57,6 +57,12 @@ setrus@host:~$
 Tha zip is password protected. John was not able to crack the password but we were able to get the zip dearchived with password :  chocolate
 https://www.lostmypass.com/file-types/7z/
 
+
+cat /usr/share/wordlists/rockyou.txt|while read line; do 7z e backup.7z -p"$line" -oout; if grep -iRl SSH; then echo $line; break;fi;done
+
+
+
+
 ![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/fourandsix2/642.png)
 
 We get the account to login to the server 
@@ -73,8 +79,7 @@ Enter passphrase for key 'id_rsa':
 There is a password for id_rsa :  123456789
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-cat /usr/share/wordlists/metasploit/adobe_top100_pass.txt | while read pass; do if ssh-keygen –c –C "user@forandsix" –P $pass –f id_rsa &>/dev/null; then echo $pass; break; fi; done
-
+cat /usr/share/wordlists/rockyou.txt|while read line; do if ssh-keygen -p -P "$line" -N password -f id_rsa; then echo $line; break;fi;done  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

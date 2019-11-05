@@ -58,8 +58,11 @@ Tha zip is password protected. John was not able to crack the password but we we
 https://www.lostmypass.com/file-types/7z/
 
 
-cat /usr/share/wordlists/rockyou.txt|while read line; do 7z e backup.7z -p"$line" -oout; if grep -iRl SSH; then echo $line; break;fi;done
+ZIP PASSWORD CRACKING
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+cat /usr/share/wordlists/rockyou.txt|while read line; do 7z e backup.7z -p"$line" -oout; if grep -iRl SSH; then echo $line; break;fi;done
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -78,6 +81,7 @@ Enter passphrase for key 'id_rsa':
 
 There is a password for id_rsa :  123456789
 
+id_rsa Password Cracking
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 cat /usr/share/wordlists/rockyou.txt|while read line; do if ssh-keygen -p -P "$line" -N password -f id_rsa; then echo $line; break;fi;done  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

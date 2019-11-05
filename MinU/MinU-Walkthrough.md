@@ -77,7 +77,7 @@ GENERATED WORDS: 4612
 
 
 We can upload a SVG file
-
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/MinU/min1.png)
 
 SVG XXE AttacK
 https://insinuator.net/2015/03/xxe-injection-in-apache-batik-library-cve-2015-0250/
@@ -91,7 +91,7 @@ root@setrus:~# cat file.svg
 
 Uploading the file to the server and we get the content of /etc/passwd
 
-
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/MinU/min2.png)
 
 
 Retrieving employee .ash_history
@@ -107,6 +107,7 @@ root@setrus:~# cat getConent.svg
 
 After upoading we get the password
 
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/MinU/min3.png)
 
 Connecting to the server:
 
@@ -167,7 +168,7 @@ minuv2:~$ cat /etc/passwd | micro
 
 Adding the user test into /etc/passwd
 
-
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/MinU/min4.png)
 
 Privilege escalation to root
 

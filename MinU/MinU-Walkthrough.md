@@ -3,6 +3,8 @@ MinUv2
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [+] Contente Discovery - searching for a specific file .html
 [+] SVG exploitation with XXE
+[+] Getting credentials from ash_history
+[+] Privilege Escalation with micro editor -> adding user to /etc/passwd
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

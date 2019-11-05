@@ -98,7 +98,7 @@ key-1-of-3.txt
 
 Going to http://www.example.com/wp-login we get the information that the user is elliot.
 
-![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/mr.Robot/mr.robot1.png
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/mr.Robot/mr.robot1.png)
 
 After brute forcing the password for elliot using dictionary “ fsocity.dic” we get the following credentials:
 

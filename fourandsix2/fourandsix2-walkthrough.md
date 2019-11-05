@@ -57,7 +57,7 @@ setrus@host:~$
 Tha zip is password protected. John was not able to crack the password but we were able to get the zip dearchived with password :  chocolate
 https://www.lostmypass.com/file-types/7z/
 
-![Alt Tag]()
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/fourandsix2/642.png)
 
 We get the account to login to the server 
 

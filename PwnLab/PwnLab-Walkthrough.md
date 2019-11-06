@@ -155,8 +155,8 @@ MySQL [Users]> show databases;
 MySQL [Users]> use Users;
 Database changed
 
-MySQL [Users]> show tables
-    -> ;
+MySQL [Users]> show tables; 
+    
 +-----------------+
 | Tables_in_Users |
 +-----------------+
@@ -178,7 +178,7 @@ MySQL [Users]> select * from users;
 
 Using kent user with password JWzXuBJJNy
 
-
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/PwnLab/pwnlab1.png)
 
 We are able to upoad files to the server. But the server aspects an image file. In order to receive a reverse shell we have to upload the php-reverse-shell.php.
 The files has GIF98 appended and the extension os gif.
@@ -381,7 +381,7 @@ function printit ($string) {
 
 Once uploaded we get the file accessed bu submitting the following request.
 
-
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/PwnLab/pwnlab2.png)
 
 We get a reverse shell on KALI on port 1234.
 

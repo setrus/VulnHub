@@ -49,3 +49,8 @@ DC:1             [+] Privilege Escalation abusing SUID bit  - find
 MinUv2           [+] Privilege Escalation abusing SUID bit  - micro editor
 PwnLab           [+] Privilege Escalation abusing SUID bit  - script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Abusing PATH Variables
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Silky            [+] Privilege Escalation Abusing PATH Variables -  whoami
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

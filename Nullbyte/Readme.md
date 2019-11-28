@@ -110,12 +110,14 @@ main.gif            100%[===================>]  16.26K  --.-KB/s    in 0.001s
 
 We get to the file:http://192.168.56.107/kzMb5nVYJw/index.php
 
-
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Nullbyte/nullbyte1.png)
 
 After entering keys from rockyou.txt we found the key : elite
 
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Nullbyte/nullbyte2.png)
 
-We have to enter a username .
+We have to enter a username 
+
 Using SQLmap to get the database name : seth
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -244,17 +246,21 @@ Table: users
 
 
 usernames: ramses, isis
+
 password : YzZkNmJkN2ViZjgwNmY0M2M3NmFjYzM2ODE3MDNiODE
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 root@setrus:~# echo 'YzZkNmJkN2ViZjgwNmY0M2M3NmFjYzM2ODE3MDNiODE=' | base64 -d
-c6d6bd7ebf806f43c76acc3681703b81root@setrus:~#
+c6d6bd7ebf806f43c76acc3681703b81
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+![Alt Tag](https://raw.githubusercontent.com/setrus/VulnHub/master/Nullbyte/nullbyte3.png)
 
 
-Loging in as ramses:
+
+Username: ramses
+
 Password: omega
 
 
@@ -276,6 +282,7 @@ uid=1002(ramses) gid=1002(ramses) groups=1002(ramses)
 
 
 Privilege Escalation. 
+
 Looking for SUID bit files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -283,7 +290,6 @@ ramses@NullByte:~$ find / -perm -u=s -type f 2>/dev/null
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The program is trying to run ps
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ramses@NullByte:~$ find / -perm -u=s -type f 2>/dev/null
@@ -307,6 +313,11 @@ ramses@NullByte:~$ find / -perm -u=s -type f 2>/dev/null
 /bin/mount
 /bin/umount
 /sbin/mount.nfs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The program /var/www/backup/procwatch  is trying to run ps
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ramses@NullByte:~$ /var/www/backup/procwatch
   PID TTY          TIME CMD
  1449 pts/0    00:00:00 procwatch

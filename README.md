@@ -52,5 +52,9 @@ PwnLab           [+] Privilege Escalation abusing SUID bit  - script
 
 Abusing PATH Variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Silky            [+] Privilege Escalation Abusing PATH Variables -  whoami
+Silky            [+] Privilege Escalation abusing PATH Variables - whoami
+Beast            [+] Privilege Escalation abusing PATH Variables - whoami
+Symfonos1        [+] Privilege Escalation abusing PATH Variables - curl
+NUllbyte         [+] Privilege Escalation abusing PATH Variables - ps
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
